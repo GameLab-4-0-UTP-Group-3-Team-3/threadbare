@@ -127,6 +127,18 @@ limit_bottom = 540
 position_smoothing_enabled = true
 editor_draw_limits = true
 
+[node name="ScreenOverlay" type="CanvasLayer" parent="."]
+
+[node name="Cinematic" type="Node2D" parent="." node_paths=PackedStringArray("animation_player")]
+script = ExtResource("4_o5rvx")
+dialogue = ExtResource("5_qahq3")
+animation_player = NodePath("../OnTheGround/AnimationPlayer")
+next_scene = "uid://c3t1y7faa2j04"
+metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="Rock" parent="." instance=ExtResource("6_c56ar")]
+position = Vector2(125, 403)
+
 [node name="OnTheGround" type="Node2D" parent="."]
 y_sort_enabled = true
 
@@ -141,15 +153,3 @@ root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_qdpvj")
 }
-
-[node name="ScreenOverlay" type="CanvasLayer" parent="."]
-
-[node name="Cinematic" type="Node2D" parent="." node_paths=PackedStringArray("animation_player")]
-script = ExtResource("4_o5rvx")
-dialogue = ExtResource("5_qahq3")
-animation_player = NodePath("../OnTheGround/AnimationPlayer")
-next_scene = "uid://coi4lvxir542y"
-metadata/_custom_type_script = "uid://x1mxt6bmei2o"
-
-[node name="Rock" parent="." instance=ExtResource("6_c56ar")]
-position = Vector2(125, 403)
