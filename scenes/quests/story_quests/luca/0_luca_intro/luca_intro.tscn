@@ -1,7 +1,7 @@
-[gd_scene load_steps=11 format=4 uid="uid://c0f7roryjsk0l"]
+[gd_scene load_steps=11 format=4 uid="uid://niaoav4adep0"]
 
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_ds1ds"]
-[ext_resource type="Texture2D" uid="uid://07k43id4c81h" path="res://scenes/quests/story_quests/template/0_template_intro/template_intro_components/template_Replace image.png" id="2_l36sb"]
+[ext_resource type="Texture2D" uid="uid://gux55bsqoev8" path="res://scenes/quests/story_quests/luca/0_luca_intro/template_intro_components/npc.png" id="2_qahq3"]
 [ext_resource type="SpriteFrames" uid="uid://c5ae05mu1f1d1" path="res://scenes/quests/story_quests/luca/luca_components/luca_player.tres" id="3_nbram"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_o5rvx"]
 [ext_resource type="Resource" uid="uid://cljpx3upyd8b2" path="res://scenes/quests/story_quests/luca/0_luca_intro/template_intro_components/luca_dialogo_intro.dialogue" id="5_qahq3"]
@@ -109,9 +109,9 @@ tile_set = ExtResource("1_ds1ds")
 metadata/_edit_lock_ = true
 
 [node name="IntroImage" type="Sprite2D" parent="TileMapLayers"]
-position = Vector2(770, 227)
-scale = Vector2(0.802083, 0.802083)
-texture = ExtResource("2_l36sb")
+position = Vector2(767, 225)
+scale = Vector2(0.209043, 0.209043)
+texture = ExtResource("2_qahq3")
 
 [node name="Sand" type="TileMapLayer" parent="TileMapLayers"]
 tile_map_data = PackedByteArray("AAAKAAEABgAAAAAAAAAKAAIABgADAAEAAAAKAAMABgADAAEAAAAKAAQABgADAAEAAAANAAEABgACAAAAAAANAAIABgADAAEAAAANAAMABgADAAEAAAANAAQABgADAAEAAAAKAAUABgAAAAIAAAALAAEABgABAAMAAAALAAUABgABAAMAAAAMAAEABgABAAMAAAAMAAUABgABAAMAAAANAAUABgACAAIAAAAAAAcAAQAGAAMAAAABAAcAAQAGAAMAAAACAAcAAQAGAAMAAAADAAcAAQAGAAMAAAAEAAcAAQAGAAMAAAAFAAcAAQAGAAMAAAAGAAcAAQAGAAMAAAAHAAcAAQAGAAMAAAAIAAcAAQAGAAMAAAAJAAcAAQAGAAMAAAAKAAcAAQAGAAMAAAALAAcAAQAGAAMAAAAMAAcAAQAGAAMAAAANAAcAAQAGAAMAAAAOAAcAAQAGAAMAAAA=")

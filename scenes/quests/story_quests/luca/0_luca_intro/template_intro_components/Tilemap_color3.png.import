@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d14d54745t5sc"
-path="res://.godot/imported/template_Replace image.png-ed06f430ca0da58700de7932851f9c8b.ctex"
+uid="uid://bh5x8su4wtl7i"
+path="res://.godot/imported/Tilemap_color3.png-fa35773c7d31bf13310434e6262e805b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/luca/0_luca_intro/template_intro_components/template_Replace image.png"
-dest_files=["res://.godot/imported/template_Replace image.png-ed06f430ca0da58700de7932851f9c8b.ctex"]
+source_file="res://scenes/quests/story_quests/luca/0_luca_intro/template_intro_components/Tilemap_color3.png"
+dest_files=["res://.godot/imported/Tilemap_color3.png-fa35773c7d31bf13310434e6262e805b.ctex"]
 
 [params]
 
