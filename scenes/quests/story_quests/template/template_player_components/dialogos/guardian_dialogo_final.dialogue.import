@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ckkcmpb16nftf"
+path="res://.godot/imported/guardian_dialogo_final.dialogue-b30c54c498e7a5a671b8fb900a56fcbb.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/template/template_player_components/dialogos/guardian_dialogo_final.dialogue"
+dest_files=["res://.godot/imported/guardian_dialogo_final.dialogue-b30c54c498e7a5a671b8fb900a56fcbb.tres"]
+
+[params]
+
+defaults=true

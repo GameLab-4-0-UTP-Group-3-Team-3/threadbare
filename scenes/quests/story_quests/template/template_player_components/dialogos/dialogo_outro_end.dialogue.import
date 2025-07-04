@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b7k02lmxusxer"
+path="res://.godot/imported/dialogo_outro_end.dialogue-36baeeb15a3821034e689faa0e7f4374.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/template/template_player_components/dialogos/dialogo_outro_end.dialogue"
+dest_files=["res://.godot/imported/dialogo_outro_end.dialogue-36baeeb15a3821034e689faa0e7f4374.tres"]
+
+[params]
+
+defaults=true

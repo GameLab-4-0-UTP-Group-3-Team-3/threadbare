@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d1uyc8e0ulwgu"
+path="res://.godot/imported/dialogo_final_nivel_1.dialogue-fa369af21db3176dd768ec219ce77e39.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/template/template_player_components/dialogos/dialogo_final_nivel_1.dialogue"
+dest_files=["res://.godot/imported/dialogo_final_nivel_1.dialogue-fa369af21db3176dd768ec219ce77e39.tres"]
+
+[params]
+
+defaults=true

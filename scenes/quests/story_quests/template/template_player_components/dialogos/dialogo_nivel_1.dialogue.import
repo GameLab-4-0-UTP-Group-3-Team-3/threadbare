@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bh1qpxq2cjqnq"
+path="res://.godot/imported/dialogo_nivel_1.dialogue-16539e7cda5a7cf1667c5190c1016276.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/template/template_player_components/dialogos/dialogo_nivel_1.dialogue"
+dest_files=["res://.godot/imported/dialogo_nivel_1.dialogue-16539e7cda5a7cf1667c5190c1016276.tres"]
+
+[params]
+
+defaults=true

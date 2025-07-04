@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+{{npc_name}}: Hola, soy el guardian, y tu?
+{{player_name}}: Soy Luca
+{{npc_name}}: Oh, sir Luca, salvadme, mi mundo está siendo destruido, solo tú puedes...
+{{npc_name}}: Recupera la hoja sagrada, lo puse dentro de un objeto que se usa para guardar hilo.
+{{npc_name}}: Ve, se acaba el tiempo.
+=> END

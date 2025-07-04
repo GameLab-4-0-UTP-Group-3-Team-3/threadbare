@@ -1,0 +1,132 @@
+[gd_scene load_steps=21 format=4 uid="uid://bklx6wsrgiqsj"]
+
+[ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_2m08h"]
+[ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="2_gd68d"]
+[ext_resource type="Resource" uid="uid://c542p1ec3d3vh" path="res://scenes/quests/story_quests/template/template_player_components/dialogos/3.1_dialogo_pre.dialogue" id="5_uj2oe"]
+[ext_resource type="Resource" uid="uid://0lqclr1stkbb" path="res://scenes/quests/story_quests/template/template_player_components/dialogos/3.1_PREEND.dialogue" id="8_wwfv1"]
+[ext_resource type="PackedScene" uid="uid://ipvcfv2g0oi1" path="res://scenes/game_elements/characters/npcs/talker/talker.tscn" id="9_0j65m"]
+[ext_resource type="Resource" uid="uid://ckkcmpb16nftf" path="res://scenes/quests/story_quests/template/template_player_components/dialogos/guardian_dialogo_final.dialogue" id="10_1ul07"]
+[ext_resource type="SpriteFrames" uid="uid://dmpx4nyqnickm" path="res://scenes/quests/story_quests/template/template_player_components/Guardian.tres" id="11_70e65"]
+[ext_resource type="Texture2D" uid="uid://bxxgg5epanvm3" path="res://scenes/quests/story_quests/template/template_player_components/checkpoint/checkpoint_2_universal.png" id="12_0ojlh"]
+[ext_resource type="Resource" uid="uid://ctlv26bh4lqmm" path="res://scenes/quests/story_quests/template/template_player_components/dialogos/checkpoint_dialogo_final.dialogue" id="12_70e65"]
+[ext_resource type="PackedScene" uid="uid://covsdqqsd6rsy" path="res://scenes/game_elements/props/sign/sign.tscn" id="17_ijduc"]
+[ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="19_516ff"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wcje8"]
+atlas = ExtResource("12_0ojlh")
+region = Rect2(0, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_es647"]
+atlas = ExtResource("12_0ojlh")
+region = Rect2(64, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wmth"]
+atlas = ExtResource("12_0ojlh")
+region = Rect2(128, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwg61"]
+atlas = ExtResource("12_0ojlh")
+region = Rect2(192, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2m08h"]
+atlas = ExtResource("12_0ojlh")
+region = Rect2(256, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gd68d"]
+atlas = ExtResource("12_0ojlh")
+region = Rect2(320, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ulan"]
+atlas = ExtResource("12_0ojlh")
+region = Rect2(384, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdryv"]
+atlas = ExtResource("12_0ojlh")
+region = Rect2(448, 384, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lsnp6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wcje8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_es647")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wmth")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwg61")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2m08h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gd68d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ulan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdryv")
+}],
+"loop": true,
+"name": &"Espera",
+"speed": 5.0
+}]
+
+[node name="SequencePuzzleTemplate" type="Node2D"]
+
+[node name="TileMapLayers" type="Node2D" parent="."]
+
+[node name="Grass" type="TileMapLayer" parent="TileMapLayers"]
+tile_map_data = PackedByteArray("AAANAAcAAQABAAEAAAANAAYAAQABAAEAAAANAAUAAQABAAEAAAANAAQAAQABAAEAAAANAAMAAQABAAEAAAANAAIAAQABAAEAAAANAAEAAQABAAEAAAAMAAcAAQABAAEAAAAMAAYAAQABAAEAAAAMAAUAAQABAAEAAAAMAAQAAQABAAEAAAAMAAMAAQABAAEAAAAMAAIAAQABAAEAAAAMAAEAAQABAAEAAAALAAcAAQABAAEAAAALAAYAAQABAAEAAAALAAUAAQABAAEAAAALAAQAAQABAAEAAAALAAMAAQABAAEAAAALAAIAAQABAAEAAAALAAEAAQABAAEAAAAKAAcAAQABAAEAAAAKAAYAAQABAAEAAAAKAAUAAQABAAEAAAAKAAQAAQABAAEAAAAKAAMAAQABAAEAAAAKAAIAAQABAAEAAAAJAAcAAQABAAEAAAAJAAYAAQABAAEAAAAJAAUAAQABAAEAAAAJAAQAAQABAAEAAAAJAAMAAQABAAEAAAAJAAIAAQABAAEAAAAIAAcAAQABAAEAAAAIAAYAAQABAAEAAAAIAAUAAQABAAEAAAAIAAQAAQABAAEAAAAIAAMAAQABAAEAAAAIAAIAAQABAAEAAAAHAAcAAQABAAEAAAAHAAYAAQABAAEAAAAHAAUAAQABAAEAAAAHAAQAAQABAAEAAAAHAAMAAQABAAEAAAAHAAIAAQABAAEAAAAGAAcAAQABAAEAAAAGAAYAAQABAAEAAAAGAAUAAQABAAEAAAAGAAQAAQABAAEAAAAGAAMAAQABAAEAAAAGAAIAAQABAAEAAAAFAAcAAQABAAEAAAAFAAYAAQABAAEAAAAFAAUAAQABAAEAAAAFAAQAAQABAAEAAAAFAAMAAQABAAEAAAAFAAIAAQABAAEAAAAFAAEAAQABAAEAAAAEAAcAAQABAAEAAAAEAAYAAQABAAEAAAAEAAQAAQABAAEAAAAEAAMAAQABAAEAAAAEAAIAAQABAAEAAAAEAAEAAQABAAEAAAADAAQAAQABAAEAAAADAAMAAQABAAEAAAADAAIAAQABAAEAAAADAAEAAQABAAEAAAACAAMAAQABAAEAAAACAAIAAQABAAEAAAACAAEAAQABAAEAAAABAAMAAQABAAEAAAABAAIAAQABAAEAAAABAAEAAQABAAEAAAACAAQAAQABAAEAAAABAAQAAQABAAEAAAAAAAQAAQABAAEAAAAGAAAAAQABAAEAAAAHAAAAAQABAAEAAAAFAAAAAQABAAEAAAAIAAAAAQABAAEAAAAJAAAAAQABAAEAAAALAAAAAQABAAEAAAAMAAAAAQABAAEAAAAKAAAAAQABAAEAAAANAAAAAQABAAEAAAAEAAAAAQABAAEAAAADAAAAAQABAAEAAAACAAAAAQABAAEAAAABAAAAAQABAAEAAAAAAAAAAQABAAEAAAAAAAEAAQABAAEAAAAAAAIAAQABAAEAAAAAAAMAAQABAAEAAAAAAAgAAQABAAEAAAABAAgAAQABAAEAAAACAAgAAQABAAEAAAADAAgAAQABAAEAAAAEAAgAAQABAAEAAAAFAAgAAQABAAEAAAAGAAgAAQABAAEAAAAHAAgAAQABAAEAAAAIAAgAAQABAAEAAAAJAAgAAQABAAEAAAAKAAgAAQABAAEAAAAMAAgAAQABAAEAAAALAAgAAQABAAEAAAANAAgAAQABAAEAAAAOAAgAAQABAAEAAAAOAAcAAQABAAEAAAAOAAYAAQABAAEAAAAOAAUAAQABAAEAAAAOAAQAAQABAAEAAAAOAAMAAQABAAEAAAAOAAIAAQABAAEAAAAOAAEAAQABAAEAAAAOAAAAAQABAAEAAAAAAAUAAQABAAEAAAABAAUAAQABAAEAAAACAAUAAQABAAEAAAADAAUAAQABAAEAAAAEAAUAAQABAAEAAAADAAYAAQABAAEAAAACAAYAAQABAAEAAAABAAYAAQABAAEAAAAAAAYAAQABAAEAAAAAAAcAAQABAAEAAAABAAcAAQABAAEAAAACAAcAAQABAAEAAAADAAcAAQABAAEAAAAGAAEAAQABAAEAAAAHAAEAAQABAAEAAAAIAAEAAQABAAEAAAAJAAEAAQABAAEAAAAKAAEAAQABAAEAAAAPAAkAAQACAAIAAAAPAAgAAQACAAEAAAAPAAcAAQACAAEAAAAPAAYAAQACAAEAAAAPAAUAAQACAAEAAAAPAAQAAQACAAEAAAAPAAMAAQACAAEAAAAPAAIAAQACAAEAAAAPAAEAAQACAAEAAAAPAAAAAQACAAEAAAAPAP//AQACAAAAAAAOAAkAAQABAAIAAAAOAP//AQABAAAAAAANAAkAAQABAAIAAAANAP//AQABAAAAAAAMAAkAAQABAAIAAAAMAP//AQABAAAAAAALAAkAAQABAAIAAAALAP//AQABAAAAAAAKAAkAAQABAAIAAAAKAP//AQABAAAAAAAJAAkAAQABAAIAAAAJAP//AQABAAAAAAAIAAkAAQABAAIAAAAIAP//AQABAAAAAAAHAAkAAQABAAIAAAAHAP//AQABAAAAAAAGAAkAAQABAAIAAAAGAP//AQABAAAAAAAFAAkAAQABAAIAAAAFAP//AQABAAAAAAAEAAkAAQABAAIAAAAEAP//AQABAAAAAAADAAkAAQABAAIAAAADAP//AQABAAAAAAACAAkAAQABAAIAAAACAP//AQABAAAAAAABAAkAAQABAAIAAAABAP//AQABAAAAAAAAAAkAAQABAAIAAAAAAP//AQABAAAAAAD//wkAAQAAAAIAAAD//wgAAQAAAAEAAAD//wcAAQAAAAEAAAD//wYAAQAAAAEAAAD//wUAAQAAAAEAAAD//wQAAQAAAAEAAAD//wMAAQAAAAEAAAD//wIAAQAAAAEAAAD//wEAAQAAAAEAAAD//wAAAQAAAAEAAAD/////AQAAAAAAAAA=")
+tile_set = ExtResource("1_2m08h")
+
+[node name="Sand" type="TileMapLayer" parent="TileMapLayers"]
+tile_map_data = PackedByteArray("AAD//wcAAQAFAAMAAAAAAAcAAQAGAAMAAAABAAcAAQAGAAMAAAACAAcAAQAGAAMAAAADAAcAAQAHAAIAAAADAAYAAQAIAAEAAAADAAUAAQAFAAAAAAAEAAUAAQAGAAMAAAAFAAUAAQAGAAMAAAAGAAUAAQAGAAMAAAAHAAUAAQAGAAMAAAAIAAUAAQAGAAMAAAAJAAUAAQAGAAMAAAAKAAUAAQAGAAMAAAALAAUAAQAHAAIAAAALAAQAAQAFAAAAAAAMAAQAAQAGAAMAAAANAAQAAQAGAAMAAAAOAAQAAQAGAAMAAAAPAAQAAQAHAAMAAAA=")
+tile_set = ExtResource("1_2m08h")
+
+[node name="OnTheGround" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Player" parent="OnTheGround" instance=ExtResource("2_gd68d")]
+position = Vector2(383, 371)
+player_name = "Luca"
+
+[node name="Sign" parent="OnTheGround" instance=ExtResource("17_ijduc")]
+position = Vector2(184, 434)
+direction = 1
+text = "¿El final?"
+
+[node name="ScreenOverlay" type="CanvasLayer" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+
+[node name="Cinematic" type="Node2D" parent="."]
+script = ExtResource("19_516ff")
+dialogue = ExtResource("5_uj2oe")
+metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="Guardian2" parent="." instance=ExtResource("9_0j65m")]
+position = Vector2(821, 246)
+npc_name = "Guardian"
+dialogue = ExtResource("10_1ul07")
+sprite_frames = ExtResource("11_70e65")
+
+[node name="Cinematic2" type="Node2D" parent="Guardian2"]
+position = Vector2(200, -466)
+script = ExtResource("19_516ff")
+dialogue = ExtResource("8_wwfv1")
+next_scene = "uid://cqjdjcwwfg0xi"
+metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="checkpoint" parent="." instance=ExtResource("9_0j65m")]
+position = Vector2(817, 381)
+npc_name = "Hada Mágica"
+dialogue = ExtResource("12_70e65")
+sprite_frames = SubResource("SpriteFrames_lsnp6")

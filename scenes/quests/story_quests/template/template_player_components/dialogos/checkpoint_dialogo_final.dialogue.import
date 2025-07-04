@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ctlv26bh4lqmm"
+path="res://.godot/imported/checkpoint_dialogo_final.dialogue-2fa70b9fe3b718ea56b744bebd51d22a.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/template/template_player_components/dialogos/checkpoint_dialogo_final.dialogue"
+dest_files=["res://.godot/imported/checkpoint_dialogo_final.dialogue-2fa70b9fe3b718ea56b744bebd51d22a.tres"]
+
+[params]
+
+defaults=true

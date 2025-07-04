@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+{{npc_name}}: Hola, Gracias por salvar nuestro mundo
+{{player_name}}: De nada :D
+{{npc_name}}: Oh, sir Luca, por cierto, mi amiga quiere agradecerte.
+{{npc_name}}: Mandale mis saludos de mi parte.
+{{npc_name}}: Aunque este a mi lado... mejor ya no, lo haré mas al rato.
+=> END

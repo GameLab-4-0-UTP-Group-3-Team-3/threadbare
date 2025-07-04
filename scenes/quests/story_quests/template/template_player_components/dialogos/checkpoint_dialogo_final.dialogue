@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+{{npc_name}}: Hey, te agradezco que hayas salvado mi mundo. Aunque...
+{{player_name}}: ¿Aunque qué?
+{{npc_name}}: Oh, sir Luca, como decirte que es la primera vez salvaste el mundo,mi magia me permitía viajar a otras realidades.
+{{player_name}}: No entiendo.
+{{npc_name}}: Solo te diré que me tomó tres intentos encontrar la linea temporal y universo donde no perdías.
+{{npc_name}}: Dejando eso de lado, una vez que tomes el libro no volverás.
+{{player_name}}: Será un adios, entonces...Bye :'(
+=> END

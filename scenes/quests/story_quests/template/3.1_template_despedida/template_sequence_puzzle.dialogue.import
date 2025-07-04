@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://jrj3niob44c3"
+path="res://.godot/imported/template_sequence_puzzle.dialogue-952b7b78b12768f868cc02ce5f6421ed.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/template/3.1_template_despedida/template_sequence_puzzle.dialogue"
+dest_files=["res://.godot/imported/template_sequence_puzzle.dialogue-952b7b78b12768f868cc02ce5f6421ed.tres"]
+
+[params]
+
+defaults=true

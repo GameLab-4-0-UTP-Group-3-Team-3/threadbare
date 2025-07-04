@@ -1,6 +1,7 @@
-[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://bhamin2pby7tq"]
+[gd_resource type="SpriteFrames" load_steps=16 format=3 uid="uid://bhamin2pby7tq"]
 
 [ext_resource type="Texture2D" uid="uid://sgprgh3jbreo" path="res://scenes/game_elements/props/projectile/components/ink_blob.png" id="1_enimy"]
+[ext_resource type="Texture2D" uid="uid://bs1qyt0pvvwql" path="res://scenes/quests/story_quests/template/template_player_components/gotas.png" id="2_6hbla"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_enimy"]
 atlas = ExtResource("1_enimy")
@@ -26,6 +27,34 @@ region = Rect2(0, 256, 64, 64)
 atlas = ExtResource("1_enimy")
 region = Rect2(0, 320, 64, 64)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdsn0"]
+atlas = ExtResource("2_6hbla")
+region = Rect2(0, 166, 71, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_taftg"]
+atlas = ExtResource("2_6hbla")
+region = Rect2(71, 166, 71, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ig6np"]
+atlas = ExtResource("2_6hbla")
+region = Rect2(142, 166, 71, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l7dn8"]
+atlas = ExtResource("2_6hbla")
+region = Rect2(213, 166, 71, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2e7m1"]
+atlas = ExtResource("2_6hbla")
+region = Rect2(284, 166, 71, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p7yi6"]
+atlas = ExtResource("2_6hbla")
+region = Rect2(355, 166, 71, 166)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kylvu"]
+atlas = ExtResource("2_6hbla")
+region = Rect2(426, 166, 71, 166)
+
 [resource]
 animations = [{
 "frames": [{
@@ -50,4 +79,30 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdsn0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_taftg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ig6np")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7dn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2e7m1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p7yi6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kylvu")
+}],
+"loop": true,
+"name": &"lluvia",
+"speed": 18.0
 }]

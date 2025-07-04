@@ -10,6 +10,7 @@ enum ItemType {
 	SPIRIT,
 }
 
+
 const TEXTURES: Dictionary[ItemType, Texture2D] = {
 	ItemType.MEMORY: preload("uid://brspc1u02oawt"),
 	ItemType.IMAGINATION: preload("uid://wyiamtqmp4gk"),

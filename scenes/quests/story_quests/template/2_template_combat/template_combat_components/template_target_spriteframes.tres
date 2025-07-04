@@ -1,22 +1,22 @@
 [gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://c50725q5ey5j5"]
 
-[ext_resource type="Texture2D" uid="uid://do4tec8oedbcx" path="res://scenes/quests/story_quests/template/2_template_combat/template_combat_components/template_target.png" id="1_4v1rc"]
+[ext_resource type="Texture2D" uid="uid://bxuenmg1tkp3h" path="res://scenes/quests/story_quests/template/template_player_components/barril_1-imageonline.co-merged.png" id="2_he37w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4v1rc"]
-atlas = ExtResource("1_4v1rc")
-region = Rect2(0, 0, 64, 64)
+atlas = ExtResource("2_he37w")
+region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_he37w"]
-atlas = ExtResource("1_4v1rc")
-region = Rect2(64, 0, 64, 64)
+atlas = ExtResource("2_he37w")
+region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q0cj1"]
-atlas = ExtResource("1_4v1rc")
-region = Rect2(0, 64, 64, 64)
+atlas = ExtResource("2_he37w")
+region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kf7lf"]
-atlas = ExtResource("1_4v1rc")
-region = Rect2(64, 64, 64, 64)
+atlas = ExtResource("2_he37w")
+region = Rect2(0, 0, 64, 64)
 
 [resource]
 animations = [{

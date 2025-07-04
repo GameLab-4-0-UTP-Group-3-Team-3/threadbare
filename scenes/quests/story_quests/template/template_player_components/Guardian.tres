@@ -1,0 +1,88 @@
+[gd_resource type="SpriteFrames" load_steps=13 format=3 uid="uid://dmpx4nyqnickm"]
+
+[ext_resource type="Texture2D" uid="uid://bvsxm25xi531q" path="res://scenes/quests/story_quests/template/template_player_components/guardian/guardian_universal.png" id="1_q47na"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rb1p6"]
+atlas = ExtResource("1_q47na")
+region = Rect2(0, 640, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nl4uu"]
+atlas = ExtResource("1_q47na")
+region = Rect2(64, 640, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbi7s"]
+atlas = ExtResource("1_q47na")
+region = Rect2(128, 640, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppmtx"]
+atlas = ExtResource("1_q47na")
+region = Rect2(192, 640, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sts7m"]
+atlas = ExtResource("1_q47na")
+region = Rect2(256, 640, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohqex"]
+atlas = ExtResource("1_q47na")
+region = Rect2(320, 640, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsi67"]
+atlas = ExtResource("1_q47na")
+region = Rect2(384, 640, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2sevc"]
+atlas = ExtResource("1_q47na")
+region = Rect2(448, 640, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aj0t2"]
+atlas = ExtResource("1_q47na")
+region = Rect2(512, 640, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_skgc7"]
+atlas = ExtResource("1_q47na")
+region = Rect2(576, 640, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pdm2o"]
+atlas = ExtResource("1_q47na")
+region = Rect2(640, 640, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rb1p6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nl4uu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qbi7s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppmtx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sts7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohqex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsi67")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2sevc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aj0t2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_skgc7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pdm2o")
+}],
+"loop": true,
+"name": &"Espera",
+"speed": 5.0
+}]

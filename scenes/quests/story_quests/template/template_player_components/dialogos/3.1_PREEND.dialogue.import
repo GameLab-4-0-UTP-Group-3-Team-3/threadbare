@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://0lqclr1stkbb"
+path="res://.godot/imported/3.1_PREEND.dialogue-0beef9d2140ca2150a337da87228fef7.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/template/template_player_components/dialogos/3.1_PREEND.dialogue"
+dest_files=["res://.godot/imported/3.1_PREEND.dialogue-0beef9d2140ca2150a337da87228fef7.tres"]
+
+[params]
+
+defaults=true

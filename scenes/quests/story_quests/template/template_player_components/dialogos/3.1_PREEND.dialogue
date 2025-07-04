@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+...
+=> END
+~ well_done
+Ahora ve, regresa a tu casa luca, ve . . .
+=> END

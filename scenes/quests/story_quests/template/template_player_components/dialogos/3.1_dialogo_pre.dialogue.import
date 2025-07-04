@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c542p1ec3d3vh"
+path="res://.godot/imported/3.1_dialogo_pre.dialogue-ce95e2cd69526ea2042ac4ccaa04cbb5.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/template/template_player_components/dialogos/3.1_dialogo_pre.dialogue"
+dest_files=["res://.godot/imported/3.1_dialogo_pre.dialogue-ce95e2cd69526ea2042ac4ccaa04cbb5.tres"]
+
+[params]
+
+defaults=true
